@@ -3,7 +3,7 @@
   "homepage": "http://github.com/D3VL/google-taxonomy-matcher",
   "version": "1.0.1",
   "description": "Matches products with a fitting google product category.",
-  "main": "./src/matcher.js",
+  "main": "./lib/matcher.js",
   "typings": "./lib/matcher.d.ts",
   "scripts": {
     "test": "node ./test/test.js",

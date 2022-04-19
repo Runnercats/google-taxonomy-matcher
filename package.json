@@ -25,6 +25,7 @@
   "author": "D3VL LTD <contact@d3vl.com> (https://d3vl.com)",
   "files": [
     "lib/",
+    "taxonomies/",
     "LICENSE.md",
     "README.md"
   ],

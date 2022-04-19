@@ -16,7 +16,7 @@ export default class parser {
     this.taxonomy = "taxonomy-with-ids." + locale + ".txt";
     this.files = fs.readdirSync(path.join(__dirname, "../taxonomies"));
     this.taxonomyparsed = [];
-    if (this.files.indexOf(this.taxonomy))
+    if (this.files.indexOf(this.taxonomy) === -1)
       throw new Error("Invalid Locale " + locale);
     else {
       let lines = fs

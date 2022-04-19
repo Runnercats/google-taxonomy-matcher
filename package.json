@@ -1,11 +1,14 @@
 {
   "name": "google-taxonomy-matcher",
   "homepage": "http://github.com/D3VL/google-taxonomy-matcher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Matches products with a fitting google product category.",
   "main": "./src/matcher.js",
+  "typings": "./lib/matcher.d.ts",
   "scripts": {
-    "test": "node ./test/test.js"
+    "test": "node ./test/test.js",
+    "tsc": "tsc",
+    "pretty": "prettier --write \"./**/*.{js,ts,json}\""
   },
   "keywords": [
     "google taxonomy",
@@ -15,7 +18,9 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "minisearch": "^2.5.1"
+    "minisearch": "^2.5.1",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.3"
   },
   "author": "D3VL LTD <contact@d3vl.com> (https://d3vl.com)",
   "files": [

@@ -23,6 +23,10 @@ class Matcher {
     let matched = this.miniSearch.search(title, miniSearchOpts);
     return matched.filter((match) => match.score > this.threshold);
   }
+
+  read(): any[] {
+    return this.taxonomy;
+  }
 }
 
 export default Matcher;

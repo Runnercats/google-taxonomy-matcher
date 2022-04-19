@@ -13,5 +13,6 @@ declare class Matcher {
       };
     }
   ): SearchResult[];
+  read(): any[];
 }
 export default Matcher;

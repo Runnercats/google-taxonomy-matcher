@@ -25,7 +25,7 @@
   },
   "author": "D3VL LTD <contact@d3vl.com> (https://d3vl.com)",
   "files": [
-    "src/",
+    "lib/",
     "LICENSE.md",
     "README.md"
   ],

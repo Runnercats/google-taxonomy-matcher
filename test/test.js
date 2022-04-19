@@ -76,7 +76,9 @@ let tests = [
 let taxonomy = new Matcher.default("en-GB", 100);
 
 tests.forEach((test) => {
-  let matched = taxonomy.match(test.input);
+  const matches = taxonomy.match(test.input);
+  const matched = matches.length > 0 ? matches[0] : false;
+
   if (debug) console.log(matched);
   if (!matched) {
     if (!test.shouldPass)

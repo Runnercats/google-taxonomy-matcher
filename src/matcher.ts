@@ -19,10 +19,9 @@ class Matcher {
   match(
     title: any,
     miniSearchOpts = { fuzzy: 0.2, boost: { category: 2 } }
-  ): SearchResult | undefined {
-    let matched = this.miniSearch.search(title, miniSearchOpts)[0];
-    if (!matched || matched.score < this.threshold) return undefined;
-    else return matched;
+  ): SearchResult[] {
+    let matched = this.miniSearch.search(title, miniSearchOpts);
+    return matched.filter((match) => match.score > this.threshold);
   }
 }
 

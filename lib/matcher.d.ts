@@ -12,6 +12,6 @@ declare class Matcher {
         category: number;
       };
     }
-  ): SearchResult | undefined;
+  ): SearchResult[];
 }
 export default Matcher;
